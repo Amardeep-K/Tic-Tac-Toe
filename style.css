@@ -1,32 +1,34 @@
-*{
-    margin: 0px;
-    padding:0px;
+* {
+    margin: 0;
+    padding: 0;
 }
-.container{
-    height:70vh;
+
+.container {
+    height: 70vh;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
-body{
-    background-color:#C4B0FF ;
+
+body {
+    background-color: #C4B0FF;
     text-align: center;
-  
-    font-family:'Georgia';
+    font-family: 'Georgia';
 }
-.gameplay{
-    height:60vmin;
+
+.gameplay {
+    height: 60vmin;
     width: 60vmin;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     margin-top: 10vmin;
-    
 }
-.box{
+
+.box {
     height: 18vmin;
     width: 18vmin;
     border: none;
@@ -36,48 +38,89 @@ body{
     background-color: white;
     color: #11009E;
 }
-.turn{
+
+.turn {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.P1,.P2{
+.P1, .P2 {
     border: 1px solid black;
     width: 13vmin;
     margin: 5px;
     padding: 10px;
 }
-.P1{
+
+.P1 {
     background-color: yellow;
 }
-.btnsp{
+
+.btnsp {
     font-size: 3vmin;
-    background-color:black;
+    background-color: black;
     border: none;
-    border-radius:2vmin;
-    color:white;
+    border-radius: 2vmin;
+    color: white;
     padding: 10px;
 }
-#newgame{
-    margin-bottom:3vmin;
+
+#newgame {
+    margin-bottom: 3vmin;
     margin-top: 3vmin;
 }
-#resetbtn{
+
+#resetbtn {
     margin: 10px;
 }
-.end{
-    margin:300px;
+
+.end {
+    margin: 300px;
 }
-.end p{
+
+.end p {
     font-size: 30px;
     font-family: 'sans-serif';
 }
-.hide{
+
+.hide {
     display: none;
 }
-.header{
-padding: 30px;
+
+.header {
+    padding: 20px;
     background-color: black;
     color: white;
+}
 
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .gameplay {
+        height: 50vmin;
+        width: 50vmin;
+        margin-top: 5vmin;
+    }
+    
+    .box {
+        height: 12vmin;
+        width: 12vmin;
+        font-size: 8vmin;
+    }
+    
+    .P1, .P2 {
+        width: 9vmin;
+        padding: 5px;
+    }
+    
+    .btnsp {
+        font-size: 2vmin;
+        padding: 5px;
+    }
+    
+    .end {
+        margin: 100px;
+    }
+    
+    .header {
+        padding: 10px;
+    }
 }
